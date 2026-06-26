@@ -1,3 +1,5 @@
+package katas;
+
 import java.util.Scanner;
 
 public class kata6 {
