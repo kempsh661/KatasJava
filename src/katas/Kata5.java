@@ -30,6 +30,27 @@ public class Kata5 {
                     totalPedido += 3500;
                     System.out.println("Producto agregado: Muffin ($3.500)");
                     break;
+                case 3:
+                    totalPedido += 7500;
+                    System.out.println("Producto agregado: Sandwich ($7.500)");
+                    break;
+                case 4:
+                    totalPedido += 5000;
+                    System.out.println("Producto agregado: Jugo ($5.000)");
+                    break;
+                case 5:
+                    totalPedido += 3000;
+                    System.out.println("Producto agregado: Té ($3.000)");
+                    break;
+                case 6:
+                    if (totalPedido == 0){
+                        System.out.println("Saliendo del sistema.");
+                    } else {
+                        System.out.println("Gracias por la compra.");
+                    }
+                    break;
+                default:
+                    System.out.println("Opción no válida.");
             }
 
         }
