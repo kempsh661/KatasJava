@@ -24,6 +24,5 @@ public class Kata1 {
         } else if (porcentajePropina > 5) {
             System.out.println("Propina muy baja");
         }
-
     }
 }
