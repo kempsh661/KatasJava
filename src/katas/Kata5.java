@@ -57,3 +57,37 @@ public class Kata5 {
         System.out.println("Total pedido: "+ totalPedido);
     }
 }
+
+/*
+Kata 5: Menú Interactivo con Switch
+Contexto: La cafetería tiene un menú básico. Los clientes pueden elegir productos.
+Requisitos:
+Muestra un menú en bucle usando while (termina cuando elige salir).
+Opciones:
+1. Café ($4.000)
+2. Muffin ($3.500)
+3. Sandwich ($7.500)
+4. Jugo ($5.000)
+5. Té ($3.000)
+6. Salir
+Usa switch para procesar la selección.
+Cada vez que elige un producto, suma su precio al total.
+Cuando sale, muestra el total del pedido.Ejemplo de ejecución:
+--- Menú de la Cafetería ---
+1. Café ($4.000)
+2. Muffin ($3.500)
+3. Sandwich ($7.500)
+4. Jugo ($5.000)
+5. Té ($3.000)
+6. Salir
+Elige una opción: 1
+Producto agregado: Café ($4.000)
+Elige una opción: 3
+Producto agregado: Sandwich ($7.500)
+Elige una opción: 6
+Total del pedido: $11.500
+Casos de prueba:
+selecciones: 1, 3, 6 → Total: 11500
+selecciones: 2, 4, 5, 6 → Total: 11500
+selecciones: 6 → Total: 0
+*/
