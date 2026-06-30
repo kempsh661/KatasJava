@@ -25,25 +25,29 @@ public class Kata7 {
 
             if (cantidadProducto > 0 && cantidadProducto <= 2) {
                 descuento = subtotal * 0.00;
+                System.out.println("Descuento(0%): " + descuento);
 
             } else if (cantidadProducto > 2 && cantidadProducto <= 5) {
                 descuento = subtotal * 0.05;
+                System.out.println("Descuento(5%): " + descuento);
             } else if (cantidadProducto > 5 && cantidadProducto <= 10) {
                 descuento = subtotal * 0.10;
+                System.out.println("Descuento(10%): " + descuento);
             } else {
                 descuento = subtotal * 0.15;
+                System.out.println("Descuento(15%): " + descuento);
             }
             iva = (subtotal - descuento) * .19;
             total = subtotal + iva;
             totalCompra += total;
-            System.out.println(descuento);
-            System.out.println(iva);
-            System.out.println(total);
+            System.out.println("Subtotal: " + subtotal);
+            System.out.println("IVA: " + iva);
+            System.out.println("Total: " + total);
 
             System.out.print("¿Agregar otro producto? (S/N): ");
             centinela = sc.next();
         }
-        System.out.println(totalCompra);
+        System.out.println("Total de la compra: " + totalCompra);
     }
 }
 
